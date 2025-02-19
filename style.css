@@ -1,0 +1,109 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(./img/fundo.png) no-repeat center/cover;
+}
+
+/*  Container da Calculadora */
+.calculadora {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(241, 241, 241, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*  Visor */
+#visor {
+  background-color: rgb(243, 234, 251);
+  border: solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 50px;
+  font-size: 1.5em;
+  text-align: right;
+  color: rgb(92, 18, 132);
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* Layout dos botões */
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 15px;
+  width: 100%;
+  max-width: 350px;
+}
+
+/*  Estilo Padrão para Todos os Botões */
+button {
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  border: solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* 🔢 Botões Numéricos */
+.numeros {
+  background: linear-gradient(90deg, #833ab4 0%, #9b4ece 50%, #ab78cd 100%);
+  color: rgb(118, 32, 152);
+}
+
+.numeros:hover {
+  transform: scale(1.05);
+}
+
+/*  Operadores */
+.operador {
+  background: linear-gradient(
+    90deg,
+    rgb(95, 17, 147) 0%,
+    rgb(69, 15, 105) 50%,
+    rgb(62, 16, 93) 100%
+  );
+  color: rgb(150, 116, 162);
+}
+
+.operador:hover {
+  transform: scale(1.05);
+}
+
+/* Botão Igual */
+.operadorigual {
+  grid-column: span 2; /* Ocupa duas colunas */
+  background: linear-gradient(
+    90deg,
+    rgb(255, 165, 0) 0%,
+    rgb(255, 140, 0) 50%,
+    rgb(255, 99, 71) 100%
+  );
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.operadorigual:hover {
+  transform: scale(1.05);
+  background: linear-gradient(
+    90deg,
+    rgb(255, 200, 50) 0%,
+    rgb(255, 160, 30) 50%,
+    rgb(255, 120, 50) 100%
+  );
+}
