@@ -3,7 +3,7 @@
 Uma **calculadora funcional** desenvolvida com **HTML, CSS e JavaScript**, combinando um design moderno com interatividade dinâmica.  
 
 ## ✨ Recursos  
-✅ Interface estilizada e responsiva 🎨  
+✅ Interface estilizada
 ✅ Cálculos dinâmicos com **JavaScript** ⚡  
 ✅ Animações e efeitos nos botões ✨  
 ✅ Diferenciação visual para operadores e destaque no botão "="  
